@@ -16,6 +16,7 @@
 		E5C2C433212316C300FC7F59 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C432212316C300FC7F59 /* Capital.swift */; };
 		E5C2C45821233C4800FC7F59 /* AmenitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */; };
 		E5C2C45A21233C7F00FC7F59 /* ParksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */; };
+		E5C2C45C21234DC700FC7F59 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45B21234DC700FC7F59 /* Parks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E5C2C432212316C300FC7F59 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 		E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesTableViewController.swift; sourceTree = "<group>"; };
 		E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksTableViewController.swift; sourceTree = "<group>"; };
+		E5C2C45B21234DC700FC7F59 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +70,9 @@
 				E5C2C432212316C300FC7F59 /* Capital.swift */,
 				E5C2C41F212313D900FC7F59 /* ViewController.swift */,
 				E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */,
-				E5C2C421212313D900FC7F59 /* Main.storyboard */,
 				E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */,
+				E5C2C45B21234DC700FC7F59 /* Parks.swift */,
+				E5C2C421212313D900FC7F59 /* Main.storyboard */,
 				E5C2C424212313DB00FC7F59 /* Assets.xcassets */,
 				E5C2C426212313DB00FC7F59 /* LaunchScreen.storyboard */,
 				E5C2C429212313DB00FC7F59 /* Info.plist */,
@@ -166,6 +169,7 @@
 				E5C2C433212316C300FC7F59 /* Capital.swift in Sources */,
 				E5C2C45821233C4800FC7F59 /* AmenitiesTableViewController.swift in Sources */,
 				E5C2C45A21233C7F00FC7F59 /* ParksTableViewController.swift in Sources */,
+				E5C2C45C21234DC700FC7F59 /* Parks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
