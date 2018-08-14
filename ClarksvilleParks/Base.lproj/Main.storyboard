@@ -84,7 +84,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="iE1-Ww-zhQ">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="zYr-FV-lAN"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="zYr-FV-lAN"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rnd-KX-4vO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,7 +115,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Title" id="Z0D-H6-q29">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="akR-f6-uUK"/>
+                        <barButtonItem key="rightBarButtonItem" title="Submit" id="akR-f6-uUK"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GNX-f0-6Ll" userLabel="First Responder" sceneMemberID="firstResponder"/>
