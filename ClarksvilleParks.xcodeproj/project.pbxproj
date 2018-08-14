@@ -13,10 +13,10 @@
 		E5C2C425212313DB00FC7F59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E5C2C424212313DB00FC7F59 /* Assets.xcassets */; };
 		E5C2C428212313DB00FC7F59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5C2C426212313DB00FC7F59 /* LaunchScreen.storyboard */; };
 		E5C2C431212315AD00FC7F59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C2C430212315AD00FC7F59 /* MapKit.framework */; };
-		E5C2C433212316C300FC7F59 /* Capital.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C432212316C300FC7F59 /* Capital.swift */; };
 		E5C2C45821233C4800FC7F59 /* AmenitiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */; };
 		E5C2C45A21233C7F00FC7F59 /* ParksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */; };
 		E5C2C45C21234DC700FC7F59 /* Parks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C2C45B21234DC700FC7F59 /* Parks.swift */; };
+		E5C2C45E212353A600FC7F59 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C2C45D212353A600FC7F59 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		E5C2C427212313DB00FC7F59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E5C2C429212313DB00FC7F59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5C2C430212315AD00FC7F59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		E5C2C432212316C300FC7F59 /* Capital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capital.swift; sourceTree = "<group>"; };
 		E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmenitiesTableViewController.swift; sourceTree = "<group>"; };
 		E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParksTableViewController.swift; sourceTree = "<group>"; };
 		E5C2C45B21234DC700FC7F59 /* Parks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parks.swift; sourceTree = "<group>"; };
+		E5C2C45D212353A600FC7F59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5C2C45E212353A600FC7F59 /* CoreLocation.framework in Frameworks */,
 				E5C2C431212315AD00FC7F59 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				E5C2C41D212313D900FC7F59 /* AppDelegate.swift */,
-				E5C2C432212316C300FC7F59 /* Capital.swift */,
 				E5C2C41F212313D900FC7F59 /* ViewController.swift */,
 				E5C2C45721233C4800FC7F59 /* AmenitiesTableViewController.swift */,
 				E5C2C45921233C7F00FC7F59 /* ParksTableViewController.swift */,
@@ -83,6 +83,7 @@
 		E5C2C42F212315AD00FC7F59 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5C2C45D212353A600FC7F59 /* CoreLocation.framework */,
 				E5C2C430212315AD00FC7F59 /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -166,7 +167,6 @@
 			files = (
 				E5C2C420212313D900FC7F59 /* ViewController.swift in Sources */,
 				E5C2C41E212313D900FC7F59 /* AppDelegate.swift in Sources */,
-				E5C2C433212316C300FC7F59 /* Capital.swift in Sources */,
 				E5C2C45821233C4800FC7F59 /* AmenitiesTableViewController.swift in Sources */,
 				E5C2C45A21233C7F00FC7F59 /* ParksTableViewController.swift in Sources */,
 				E5C2C45C21234DC700FC7F59 /* Parks.swift in Sources */,
