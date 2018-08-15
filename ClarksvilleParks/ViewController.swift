@@ -16,7 +16,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     @IBOutlet weak var mapView: MKMapView!
     
-    let manager = CLLocationManager()
+    let manager = CLLocationManager()        
     
     // updates location every time user location is moved
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -29,6 +29,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
         mapView.setRegion(region, animated: true)
+        
+        // stops updating the location
+        // TODO: // may be an issue when user moves, but it lets the user move the map around to view other annotations
+        manager.stopUpdatingLocation()
         
         self.mapView.showsUserLocation = true
     }
@@ -44,7 +48,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         
         // set title of nav bar
         title = "Map"
-        
+                
         // the park instances
         let london = Parks(title: "London", coordinate: CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275), info: "Home to the 2012 Summer Olympics.")
         let oslo = Parks(title: "Oslo", coordinate: CLLocationCoordinate2D(latitude: 59.95, longitude: 10.75), info: "Founded over a thousand years ago.")
