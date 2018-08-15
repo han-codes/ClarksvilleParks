@@ -10,9 +10,13 @@ import UIKit
 
 class AmenitiesTableViewController: UITableViewController {
 
+    var amenities = ["dog park", "baseball", "basketball", "walking trail", "bike trail", "soccer"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Amenities"
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,15 +38,15 @@ class AmenitiesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return amenities.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "amenitiesCell", for: indexPath)
-
-        // Configure the cell...
-
+        
+        cell.textLabel?.text = amenities[indexPath.row]
+        
         return cell
     }
     
