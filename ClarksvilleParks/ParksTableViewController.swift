@@ -10,9 +10,13 @@ import UIKit
 
 class ParksTableViewController: UITableViewController {
 
+    var parks = ["GIS Center"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Parks"
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,19 +33,19 @@ class ParksTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return parks.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "parksCell", for: indexPath)
 
-        // Configure the cell...
+        cell.textLabel?.text = parks[indexPath.row]
 
         return cell
     }
