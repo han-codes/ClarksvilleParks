@@ -24,6 +24,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let location = locations[0]
         
         // stores the data regarding user's location
+//        let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
         let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
         let myLocation: CLLocationCoordinate2D = CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude)
         let region: MKCoordinateRegion = MKCoordinateRegionMake(myLocation, span)
@@ -50,9 +51,11 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let paris = Parks(title: "Paris", coordinate: CLLocationCoordinate2D(latitude: 48.8567, longitude: 2.3508), info: "Often called the City of Light.")
         let rome = Parks(title: "Rome", coordinate: CLLocationCoordinate2D(latitude: 41.9, longitude: 12.5), info: "Has a whole country inside it.")
         let washington = Parks(title: "Washington DC", coordinate: CLLocationCoordinate2D(latitude: 38.895111, longitude: -77.036667), info: "Named after George himself.")
+        let gisCenter = Parks(title: "APSU GIS Center", coordinate: CLLocationCoordinate2D(latitude: 36.5351, longitude: -87.3606), info: "GIS Center by APSU Campus.")
+        let university = Parks(title: "APSU University", coordinate: CLLocationCoordinate2D(latitude: 36.5350, longitude: -87.3549), info: "APSU University")
         
         // add all the annotations to the parks
-        mapView.addAnnotations([london, oslo, paris, rome, washington])
+        mapView.addAnnotations([london, oslo, paris, rome, washington, gisCenter, university])
         
     }
 
